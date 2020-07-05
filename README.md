@@ -24,5 +24,17 @@ El hardware utilizado para realizar el sistema fue el siguiente:
 
 https://i.ibb.co/HFvqh8W/20200630-130329.jpg
 
+Aqui podemos ver como la terminal de la RPi Zero W esta mandando los datos del HR a la pagina mediante el broker Cloud MQTT.
+
+https://i.ibb.co/tYgWZPD/image.png
+
+# How we built it
+
+Esquema de conexion:
+
+https://i.ibb.co/KW9XxW4/Esquema.png
+
+Primero se configuro la RPi para ser un Gateway BLE para el reloj, la configuracion de la raspberry se realizo asi:
+
 
 
