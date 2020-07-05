@@ -24,16 +24,21 @@ for(var j = 0; j < numArray.length; j++) {
   return Math.round(total / numArray.length);
 }
 
+const Server = "YOUR_SERVER"
+const User = "YOUR_USER"
+const Password = "YOUR_PASSWORD"
+const Port = YOUR_PORT
+
 var mqtt    = require('mqtt');
 var options = {
 protocol: 'mqtts',
-username:"orywwdxe",
-password: "0qK8pfXqs9hk",
+username:User,
+password: Password,
 clientId: 'b0908853',
 keepalive:60,
 reconnectPeriod: 1000	
 };
-var client  = mqtt.connect('mqtt://tailor.cloudmqtt.com:38582', options);
+var client  = mqtt.connect('mqtt://'+Server+':'+Port, options);
 
 client.subscribe('test');
 
