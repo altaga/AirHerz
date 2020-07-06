@@ -5,17 +5,13 @@ Analisis de HR de los aempleados para aumentar la productividad.
 
 # Solution and What it does
 
-Desarrollamos un bloque de Air table el cual es capaz de ver y analizar en tiempo real el HR de los empleados y con esto poder analizar si el empleado nececita tomarse un momento para despejarse.
+Desarrollamos un bloque de Air table el cual es capaz de ver y analizar en tiempo real el HR de los empleados y con esto poder analizar si el empleado nececita tomarse un momento para despejarse. Cuando el empleado empieza a sufrir de ansiedad y ha estado mucho tiempo inactivo el sistema le arrojara una notificacion de que necesita una descanso.
 
-<img src="https://i.ibb.co/P16tMBg/image.png">
-
-Cuando el empleado empieza a sufrir de ansiedad y ha estado mucho tiempo inactivo el sistema le arrojara una notificacion de que necesita una descanso.
-
-<img src="https://i.ibb.co/Mkf6KGN/image.png">
+<img src="https://i.ibb.co/J3bXdKX/Final-Screen1.png">
 
 A su vez tenemos un bloque que funciona como widget y como aplicacion, ya que si solo tenemos de lado el widget podemos ver que aparece unicamente nuestros pasos y nuestro hr, sin embargo si ampliamos la pantalla, podremos ver de forma amplia nuestro HR del dia y nuestros promedios, todo esto en tiempo real.
 
-<img src="https://i.ibb.co/ct1PQfT/image.png">
+<img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
 
 El hardware utilizado para realizar el sistema fue el siguiente:
 
@@ -116,7 +112,7 @@ First, we will install the necessary libraries for our program to work.
 
       sudo apt-get update
       sudo apt-get install python3-pip libglib2.0-dev libatlas-base-dev git -y
-      sudo pip3 install bluepy Crypto crc16 paho-mqtt sklearn numpy
+      sudo pip3 install bluepy Crypto crc16 paho-mqtt
 
 - Download the folder with our program
 
@@ -151,7 +147,7 @@ With this preparation, the last thing we need to do is obtain the MAC-Address of
 
 ## Block Setup:
 
-NOTA: Recomiendo realizar este ejercicio antes de empezar a configurar su bloque.
+NOTA: Recomiendo realizar este ejercicio antes de empezar a configurar su bloque ya que en el explican la configuracion incial, instalacion de dependencias, etc.
 
 https://airtable.com/developers/blocks/guides/hello-world-tutorial
 
@@ -177,25 +173,46 @@ Si todo funciona correctamente veremos la siguiente ventana.
 
 Dentro de la plataforma de Airtable para hacer funcionar el bloque pondremos lo siguiente.
 
-<img src="https://i.ibb.co/4pjYjHq/image.png" width="1000">
+<img src="https://i.ibb.co/hVBPHZD/image.png" width="1000">
 
 Una vez todo este correctamente configurado veremos lo siguiente.
 
-<img src="https://i.ibb.co/0FCvWv6/image.png" width="1000">
+<img src="https://i.ibb.co/7WqYfCC/image.png" width="1000">
 
-Ahora si hacemos funcionar todo el sistema veremos como el HR del empleado empieza a aparecer en la pantalla.
+Ahora si hacemos funcionar todo el sistema veremos como el HR del empleado empieza a aparecer en la pantalla. El bloque es responsive, asi que puede ajustar el tamaño de este a su gusto o tamaño de pantalla.
 
-<img src="https://i.ibb.co/P16tMBg/image.png">
+<img src="https://i.ibb.co/J3bXdKX/Final-Screen1.png">
 
 Y si hacemos grande el bloque veremos el monitor con los datos en tiempo real del trabajador.
 
-<img src="https://i.ibb.co/ct1PQfT/image.png">
+<img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
 
-Aqui un video de como funciona el bloque.
+Aqui un video de como funciona la solucion en tiempo real, grabado con el OBS sin cortes, si los jueces requirieran un demo en tiempo real podemos sin problema agendar una videollamada.
+
+https://youtu.be/Zjk_lzNLe54
+
+# DEMO:
 
 
 
-## DEMO:
+# APENDIX:
+
+Adjunto todas las licencias de las librerias utilizadas para desarrollar el bloque como lo exigen las reglas de Airtable.
+
+ChartJS.
+https://github.com/chartjs/Chart.js/blob/master/LICENSE.md
+
+ReactChartJS.
+https://github.com/jerairrest/react-chartjs-2/blob/master/LICENSE.md
+
+MQTT.js.
+https://github.com/mqttjs/MQTT.js/blob/master/LICENSE.md
+
+Babel.
+https://github.com/babel/babel/blob/master/LICENSE
+
+Reactstrap.
+https://github.com/reactstrap/reactstrap/blob/master/LICENSE
 
 
 
