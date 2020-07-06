@@ -14,12 +14,12 @@ At the same time we have a block that works as a widget and as an application, i
 
 <img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
 
-The wardware used was:
+The Hardware used was:
 
 - RaspberryPiZero w.
 - MiBand 3.
 
-<img src="https://i.ibb.co/HFvqh8W/20200630-130329.jpg
+<img src="https://i.ibb.co/HFvqh8W/20200630-130329.jpg>
 
 Here we can see how the RPi Zero W terminal is sending the HR data to the page through the Cloud MQTT broker.
 
