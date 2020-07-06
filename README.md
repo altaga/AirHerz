@@ -8,18 +8,18 @@ Analisis de HR de los aempleados para aumentar la productividad.
 
 We developed an Air table block which is able to see and analyze the HR of the employees in real time and with this we can analyze if the employee needs to take a moment to clear himself, stop working or other use cases. When the employee begins to suffer from anxiety and has been inactive for a long time, the system will send him a notification that he needs a break.
 
-<img src="https://i.ibb.co/J3bXdKX/Final-Screen1.png">
+<img src="https://i.ibb.co/MMZSb2R/image.png">
 
 At the same time we have a block that works as a widget and as an application, if we only have the widget on our side we can see that only our steps and our hr appear, however if we enlarge the screen, we can see our HR of the day in a broad way and our averages. All of this in real time.
 
-<img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
+<img src="https://i.ibb.co/FgChfv9/image.png">
 
 The Hardware used was:
 
 - RaspberryPiZero w.
 - MiBand 3.
 
-<img src="https://i.ibb.co/HFvqh8W/20200630-130329.jpg>
+<img src="https://i.ibb.co/HFvqh8W/20200630-130329.jpg">
 
 Here we can see how the RPi Zero W terminal is sending the HR data to the page through the Cloud MQTT broker.
 
@@ -178,15 +178,15 @@ Inside the Airtable platform to make the block work we will put the following.
 
 Once everything is correctly configured we will see the following.
 
-<img src="https://i.ibb.co/7WqYfCC/image.png" width="1000">
+<img src="https://i.ibb.co/NN2xR8Z/image.png" width="1000">
 
 Now if we run the entire system we will see how the employee's HR begins to appear on the screen. The block is responsive, so you can adjust the size to your liking or screen size.
 
-<img src="https://i.ibb.co/J3bXdKX/Final-Screen1.png">
+<img src="https://i.ibb.co/MMZSb2R/image.png">
 
 And if expand the block we will see the monitor with the data in real time of the worker.
 
-<img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
+<img src="https://i.ibb.co/FgChfv9/image.png">
 
 Here is a video of how the solution works in real time, recorded with the OBS without cuts, if the judges require a demo in real time we can easily schedule a video call.
 
@@ -221,7 +221,7 @@ http://www.hivemq.com/demos/websocket-client/
 
 If everything works correctly you can see the data entered in the HR Monitor.
 
-<img src="https://i.ibb.co/bBpRjmP/image.png">
+<img src="https://i.ibb.co/F5LN1s0/image.png">
 
 Here a real time demo without Hardware:
 
