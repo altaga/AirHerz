@@ -6,46 +6,46 @@ Analisis de HR de los aempleados para aumentar la productividad.
 
 # Solution and What it does
 
-Desarrollamos un bloque de Air table el cual es capaz de ver y analizar en tiempo real el HR de los empleados y con esto poder analizar si el empleado nececita tomarse un momento para despejarse. Cuando el empleado empieza a sufrir de ansiedad y ha estado mucho tiempo inactivo el sistema le arrojara una notificacion de que necesita una descanso.
+We developed an Air table block which is able to see and analyze the HR of the employees in real time and with this we can analyze if the employee needs to take a moment to clear himself, stop working or other use cases. When the employee begins to suffer from anxiety and has been inactive for a long time, the system will send him a notification that he needs a break.
 
 <img src="https://i.ibb.co/J3bXdKX/Final-Screen1.png">
 
-A su vez tenemos un bloque que funciona como widget y como aplicacion, ya que si solo tenemos de lado el widget podemos ver que aparece unicamente nuestros pasos y nuestro hr, sin embargo si ampliamos la pantalla, podremos ver de forma amplia nuestro HR del dia y nuestros promedios, todo esto en tiempo real.
+At the same time we have a block that works as a widget and as an application, if we only have the widget on our side we can see that only our steps and our hr appear, however if we enlarge the screen, we can see our HR of the day in a broad way and our averages. All of this in real time.
 
 <img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
 
-El hardware utilizado para realizar el sistema fue el siguiente:
+The wardware used was:
 
 - RaspberryPiZero w.
 - MiBand 3.
 
 <img src="https://i.ibb.co/HFvqh8W/20200630-130329.jpg
 
-Aqui podemos ver como la terminal de la RPi Zero W esta mandando los datos del HR a la pagina mediante el broker Cloud MQTT.
+Here we can see how the RPi Zero W terminal is sending the HR data to the page through the Cloud MQTT broker.
 
 <img src="https://i.ibb.co/tYgWZPD/image.png">
 
 # How we built it
 
-Esquema de conexion:
+Connection diagram:
 
 <img src="https://i.ibb.co/KW9XxW4/Esquema.png">
 
 ## CloudMQTT Setup:
 
-Primero creamos una cuenta en CloudMQTT en un plan gratuito:
+First we create an account in CloudMQTT with a free plan:
 
 https://customer.cloudmqtt.com/signup
 
-Ya con esto accederemos a las credenciales que usaremos tanto en el bloque de Airtable como en la raspberry.
+With this we will access the credentials that we will use both in the Airtable block and in the raspberry.
 
 <img src="https://i.ibb.co/TwGdT98/image.png">
 
-Guardamos las credenciales de Server, User, Password y Port.
+We then save the Server, User, Password and Port credentials.
 
 ## RPi Setup:
 
-Primero se configuro la RPi para ser un Gateway BLE para el reloj, la configuracion de la raspberry se realizo asi:
+First the RPi was configured to be a BLE Gateway for the clock, the configuration of the raspberry was done like this:
 
 Download the operating system of the Raspberry Pi.
 
@@ -148,47 +148,47 @@ With this preparation, the last thing we need to do is obtain the MAC-Address of
 
 ## Block Setup:
 
-NOTA: Recomiendo realizar este ejercicio antes de empezar a configurar su bloque ya que en el explican la configuracion incial, instalacion de dependencias, etc.
+NOTE: I recommend doing this exercise before starting to configure your block since they explain the initial configuration, installation of dependencies, etc.
 
 https://airtable.com/developers/blocks/guides/hello-world-tutorial
 
-Para realizar la instalacion y prueba del bloque, primero tenemos que ir a la carpeta de "Block\hr_block\frontend", dentro de el archivo "app.js" vamos a configurar las credenciales de CloudMQTT.
+To perform the installation and testing of the block, we first have to go to the folder "Block\hr_block\frontend", inside the file "app.js" we are going to configure the CloudMQTT credentials.
 
 <img src="https://i.ibb.co/2MPPLPB/image.png" width="1000">
 
-Ahora tendremos que instalar las dependencias para que el bloque pueda correr con NodeJS, dentro de la carpeta "Block\hr_block" abrimos la consola CMD o en el caso de Mac OS o Linux el Terminal y ponemos el siguiente comando.
+Now we will have to install the dependencies so that the block can run with NodeJS, inside the folder "Block\hr_block" we open the CMD console or in the case of Mac OS or Linux the Terminal and put the following command.
 
     npm install
 
-Al terminar el proceso veremos una pantalla asi, indicando que se instalo todo correctamente.
+At the end of the process we will see a screen like this, indicating that everything was installed correctly.
 
 <img src="https://i.ibb.co/3SSMBVp/image.png" width="1000">
 
-Para ejecutar el bloque y poder ver su funcionamiento en Airtable, colocaremos el siguiente comando.
+To execute the block and see its operation in Airtable, we will place the following command.
 
     block run
 
-Si todo funciona correctamente veremos la siguiente ventana.
+If everything works correctly we will see the following window.
 
 <img src="https://i.ibb.co/yR8YFRv/image.png" width="1000">
 
-Dentro de la plataforma de Airtable para hacer funcionar el bloque pondremos lo siguiente.
+Inside the Airtable platform to make the block work we will put the following.
 
 <img src="https://i.ibb.co/hVBPHZD/image.png" width="1000">
 
-Una vez todo este correctamente configurado veremos lo siguiente.
+Once everything is correctly configured we will see the following.
 
 <img src="https://i.ibb.co/7WqYfCC/image.png" width="1000">
 
-Ahora si hacemos funcionar todo el sistema veremos como el HR del empleado empieza a aparecer en la pantalla. El bloque es responsive, asi que puede ajustar el tamaño de este a su gusto o tamaño de pantalla.
+Now if we run the entire system we will see how the employee's HR begins to appear on the screen. The block is responsive, so you can adjust the size to your liking or screen size.
 
 <img src="https://i.ibb.co/J3bXdKX/Final-Screen1.png">
 
-Y si hacemos grande el bloque veremos el monitor con los datos en tiempo real del trabajador.
+And if expand the block we will see the monitor with the data in real time of the worker.
 
 <img src="https://i.ibb.co/RCTCN5c/Screen-2.png">
 
-Aqui un video de como funciona la solucion en tiempo real, grabado con el OBS sin cortes, si los jueces requirieran un demo en tiempo real podemos sin problema agendar una videollamada.
+Here is a video of how the solution works in real time, recorded with the OBS without cuts, if the judges require a demo in real time we can easily schedule a video call.
 
 https://youtu.be/Zjk_lzNLe54
 
@@ -200,11 +200,11 @@ https://airtable.com/invite/l?inviteId=inv2709vKk2l2zxkw&inviteToken=2b54fbf400e
 
 # Test the block:
 
-Si no tienes el hardware disponible, aun asi puedes probar el bloque de la siguiente manera.
+If you don't have the hardware available, you can still test the block as follows.
 
-NOTA IMPORTANTE: Para un bloque de produccion es necesario utilizar un broker MQTT privado debido a los datos sensibles que pueden pasar por el y sobre todo utilizar protocolos seguros como lo son MQTT-TSL. Ademas el topic cambia de forma random cada vez que abre el bloque con el fin de evitar duplicidad de topicos en el broker y que siempre tengamos un topic unico.
+IMPORTANT NOTE: For a production block it is necessary to use a private MQTT broker due to the sensitive data that can pass through it and above all to use secure protocols such as MQTT-TSL. In addition, the topic changes randomly each time you open the block in order to avoid duplication of topics in the broker and that we always have a unique topic.
 
-1.- Abre un Websocket de MQTT y y coloca las siguientes credenciales, en nuestro caso usaremos uno publico como el que esta a continuacion.
+1.- Open an MQTT Websocket and place the following credentials, in our case we will use a public one like the one below.
 
 http://www.hivemq.com/demos/websocket-client/
 
@@ -219,7 +219,7 @@ http://www.hivemq.com/demos/websocket-client/
       Topic:YOUR_BLOCK_TOPIC
       Message:{"Device":"Device 1","hr": 80,"step":900,"meter": 1024,"rec":"ANY MESSAGE"}
 
-Si todo funciona correctamente podras ver los datos introducidos en el HR Monitor.
+If everything works correctly you can see the data entered in the HR Monitor.
 
 <img src="https://i.ibb.co/bBpRjmP/image.png">
 
@@ -229,7 +229,7 @@ https://youtu.be/HXszdwnjgqg
 
 # APENDIX:
 
-Adjunto todas las licencias de las librerias utilizadas para desarrollar el bloque como lo exigen las reglas de Airtable.
+I attach all the licenses of the libraries used to develop the block as required by the Airtable rules.
 
 ChartJS.
 https://github.com/chartjs/Chart.js/blob/master/LICENSE.md
