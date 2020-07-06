@@ -2,6 +2,7 @@
 
 Analisis de HR de los aempleados para aumentar la productividad.
 
+<img src="https://i.ibb.co/T0VDWHn/My-Post-1.png" width="1000">
 
 # Solution and What it does
 
@@ -193,7 +194,38 @@ https://youtu.be/Zjk_lzNLe54
 
 # DEMO:
 
+https://youtu.be/IGo9C7FaP9Y
 
+https://airtable.com/invite/l?inviteId=inv2709vKk2l2zxkw&inviteToken=2b54fbf400e74450ab0068d1d723ae3dcef4504958673709cf95ef02eef6de0b
+
+# Test the block:
+
+Si no tienes el hardware disponible, aun asi puedes probar el bloque de la siguiente manera.
+
+NOTA IMPORTANTE: Para un bloque de produccion es necesario utilizar un broker MQTT privado debido a los datos sensibles que pueden pasar por el y sobre todo utilizar protocolos seguros como lo son MQTT-TSL. Ademas el topic cambia de forma random cada vez que abre el bloque con el fin de evitar duplicidad de topicos en el broker y que siempre tengamos un topic unico.
+
+1.- Abre un Websocket de MQTT y y coloca las siguientes credenciales, en nuestro caso usaremos uno publico como el que esta a continuacion.
+
+http://www.hivemq.com/demos/websocket-client/
+
+<img src="https://i.ibb.co/StB7S1J/image.png">
+
+      Host:test.mosquitto.org
+      Port:8081
+      ClientID:ANY_RANDOM_STRING
+
+<img src="https://i.ibb.co/qRtzY9v/image.png">
+
+      Topic:YOUR_BLOCK_TOPIC
+      Message:{"Device":"Device 1","hr": 80,"step":900,"meter": 1024,"rec":"ANY MESSAGE"}
+
+Si todo funciona correctamente podras ver los datos introducidos en el HR Monitor.
+
+<img src="https://i.ibb.co/bBpRjmP/image.png">
+
+Here a real time demo without Hardware:
+
+https://youtu.be/HXszdwnjgqg
 
 # APENDIX:
 
