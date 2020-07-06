@@ -141,7 +141,7 @@ componentWillMount() {
 <Box display="flex" alignItems="center" justifyContent="center" backgroundColor="#000" borderRadius="large" marginTop="15px" padding={0} width={this.state.x-30} height={this.state.y/2-20} overflow="hidden">
 <Row>
   <Col>
-  <Text style={{fontFamily:"verdana",fontSize:"10px",color:"white", lineHeight:"32px", paddingLeft:"30px"}}><h1>Recomendation:</h1></Text>
+  <Text style={{fontFamily:"verdana",fontSize:"10px",color:"white", lineHeight:"32px", paddingLeft:"30px"}}><h1>Recommendation:</h1></Text>
   </Col>
   <Col>
   <Text style={{fontFamily:"verdana",fontSize:"10px",color:"white", lineHeight:"32px", paddingLeft:"30px"}}><h1>{this.state.mess}</h1></Text>
@@ -182,7 +182,7 @@ componentWillMount() {
 <Box display="flex" alignItems="center" justifyContent="center" backgroundColor="#000" borderRadius="large" marginTop="15px" padding={0} width={this.state.x/2-30} height={this.state.y/2-20} overflow="hidden">
 <Row>
   <Col>
-  <Text style={{fontFamily:"verdana",color:"white",fontSize:"14px", lineHeight:"32px", paddingLeft:"30px"}}><h1>Recomendation:</h1></Text>
+  <Text style={{fontFamily:"verdana",color:"white",fontSize:"14px", lineHeight:"32px", paddingLeft:"30px"}}><h1>Recommendation:</h1></Text>
   </Col>
   <Col>
   <Text style={{fontFamily:"verdana",color:"white",fontSize:"14px", lineHeight:"32px" , paddingLeft:"30px"}}><h1>{this.state.mess}</h1></Text>
