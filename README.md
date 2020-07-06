@@ -1,6 +1,6 @@
 # AirHerz
 
-Analisis de HR de los aempleados para aumentar la productividad.
+IoT Biometric human resource management widget to improve productivity, Powered by Airtable's airblocks
 
 <img src="https://i.ibb.co/T0VDWHn/My-Post-1.png" width="1000">
 
